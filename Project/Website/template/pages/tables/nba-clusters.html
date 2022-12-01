@@ -1,593 +1,2618 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Star Admin2</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../vendors/feather/feather.css" />
+    <link
+      rel="stylesheet"
+      href="../../vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../vendors/ti-icons/css/themify-icons.css"
+    />
+    <link rel="stylesheet" href="../../vendors/typicons/typicons.css" />
+    <link
+      rel="stylesheet"
+      href="../../vendors/simple-line-icons/css/simple-line-icons.css"
+    />
+    <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../css/vertical-layout-light/style.css" />
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../../images/favicon.png" />
+  </head>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="../../vendors/feather/feather.css">
-  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
-  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
-  <!-- endinject -->
-  <link rel="shortcut icon" href="../../images/favicon.png" />
-</head>
-
-<body>
-  <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
-    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
-      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-        <div class="me-3">
-          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
-            <span class="icon-menu"></span>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <nav
+        class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start"
+        >
+          <div class="me-3">
+            <button
+              class="navbar-toggler navbar-toggler align-self-center"
+              type="button"
+              data-bs-toggle="minimize"
+            >
+              <span class="icon-menu"></span>
+            </button>
+          </div>
+          <div>
+            <a class="navbar-brand brand-logo" href="../../index.html">
+              <img src="../../images/logo.svg" alt="logo" />
+            </a>
+            <a class="navbar-brand brand-logo-mini" href="../../index.html">
+              <img src="../../images/logo-mini.svg" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-top">
+          <ul class="navbar-nav">
+            <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+              <h1 class="welcome-text">
+                Good Morning, <span class="text-black fw-bold">John Doe</span>
+              </h1>
+              <h3 class="welcome-sub-text">
+                Your performance summary this week
+              </h3>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split"
+                id="messageDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Select Category
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                aria-labelledby="messageDropdown"
+              >
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 font-weight-medium float-left">
+                    Select category
+                  </p>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p
+                      class="preview-subject ellipsis font-weight-medium text-dark"
+                    >
+                      Bootstrap Bundle
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      This is a Bundle featuring 16 unique dashboards
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p
+                      class="preview-subject ellipsis font-weight-medium text-dark"
+                    >
+                      Angular Bundle
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      Everything you’ll ever need for your Angular projects
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p
+                      class="preview-subject ellipsis font-weight-medium text-dark"
+                    >
+                      VUE Bundle
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      Bundle of 6 Premium Vue Admin Dashboard
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p
+                      class="preview-subject ellipsis font-weight-medium text-dark"
+                    >
+                      React Bundle
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      Bundle of 8 Premium React Admin Dashboard
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <div
+                id="datepicker-popup"
+                class="input-group date datepicker navbar-date-picker"
+              >
+                <span
+                  class="input-group-addon input-group-prepend border-right"
+                >
+                  <span
+                    class="icon-calendar input-group-text calendar-icon"
+                  ></span>
+                </span>
+                <input type="text" class="form-control" />
+              </div>
+            </li>
+            <li class="nav-item">
+              <form class="search-form" action="#">
+                <i class="icon-search"></i>
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Search Here"
+                  title="Search here"
+                />
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link count-indicator"
+                id="notificationDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="icon-mail icon-lg"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                aria-labelledby="notificationDropdown"
+              >
+                <a class="dropdown-item py-3 border-bottom">
+                  <p class="mb-0 font-weight-medium float-left">
+                    You have 4 new notifications
+                  </p>
+                  <span class="badge badge-pill badge-primary float-right"
+                    >View all</span
+                  >
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">
+                      Application Error
+                    </h6>
+                    <p class="fw-light small-text mb-0">Just now</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-settings m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">
+                      Settings
+                    </h6>
+                    <p class="fw-light small-text mb-0">Private message</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">
+                      New user registration
+                    </h6>
+                    <p class="fw-light small-text mb-0">2 days ago</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link count-indicator"
+                id="countDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="icon-bell"></i>
+                <span class="count"></span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                aria-labelledby="countDropdown"
+              >
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 font-weight-medium float-left">
+                    You have 7 unread mails
+                  </p>
+                  <span class="badge badge-pill badge-primary float-right"
+                    >View all</span
+                  >
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="../../images/faces/face10.jpg"
+                      alt="image"
+                      class="img-sm profile-pic"
+                    />
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p
+                      class="preview-subject ellipsis font-weight-medium text-dark"
+                    >
+                      Marian Garner
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      The meeting is cancelled
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="../../images/faces/face12.jpg"
+                      alt="image"
+                      class="img-sm profile-pic"
+                    />
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p
+                      class="preview-subject ellipsis font-weight-medium text-dark"
+                    >
+                      David Grey
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      The meeting is cancelled
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="../../images/faces/face1.jpg"
+                      alt="image"
+                      class="img-sm profile-pic"
+                    />
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p
+                      class="preview-subject ellipsis font-weight-medium text-dark"
+                    >
+                      Travis Jenkins
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      The meeting is cancelled
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+              <a
+                class="nav-link"
+                id="UserDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="img-xs rounded-circle"
+                  src="../../images/faces/face8.jpg"
+                  alt="Profile image"
+                />
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                aria-labelledby="UserDropdown"
+              >
+                <div class="dropdown-header text-center">
+                  <img
+                    class="img-md rounded-circle"
+                    src="../../images/faces/face8.jpg"
+                    alt="Profile image"
+                  />
+                  <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                  <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+                </div>
+                <a class="dropdown-item"
+                  ><i
+                    class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"
+                  ></i>
+                  My Profile
+                  <span class="badge badge-pill badge-danger">1</span></a
+                >
+                <a class="dropdown-item"
+                  ><i
+                    class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"
+                  ></i>
+                  Messages</a
+                >
+                <a class="dropdown-item"
+                  ><i
+                    class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"
+                  ></i>
+                  Activity</a
+                >
+                <a class="dropdown-item"
+                  ><i
+                    class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"
+                  ></i>
+                  FAQ</a
+                >
+                <a class="dropdown-item"
+                  ><i
+                    class="dropdown-item-icon mdi mdi-power text-primary me-2"
+                  ></i
+                  >Sign Out</a
+                >
+              </div>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-bs-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
           </button>
         </div>
-        <div>
-          <a class="navbar-brand brand-logo" href="../../index.html">
-            <img src="../../images/logo.svg" alt="logo" />
-          </a>
-          <a class="navbar-brand brand-logo-mini" href="../../index.html">
-            <img src="../../images/logo-mini.svg" alt="logo" />
-          </a>
-        </div>
-      </div>
-      <div class="navbar-menu-wrapper d-flex align-items-top"> 
-        <ul class="navbar-nav">
-          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
-            <h3 class="welcome-sub-text">Your performance summary this week </h3>
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
-              <a class="dropdown-item py-3" >
-                <p class="mb-0 font-weight-medium float-left">Select category</p>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">Bootstrap Bundle </p>
-                  <p class="fw-light small-text mb-0">This is a Bundle featuring 16 unique dashboards</p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">Angular Bundle</p>
-                  <p class="fw-light small-text mb-0">Everything you’ll ever need for your Angular projects</p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">VUE Bundle</p>
-                  <p class="fw-light small-text mb-0">Bundle of 6 Premium Vue Admin Dashboard</p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">React Bundle</p>
-                  <p class="fw-light small-text mb-0">Bundle of 8 Premium React Admin Dashboard</p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item d-none d-lg-block">
-            <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
-              <span class="input-group-addon input-group-prepend border-right">
-                <span class="icon-calendar input-group-text calendar-icon"></span>
-              </span>
-              <input type="text" class="form-control">
-            </div>
-          </li>
-          <li class="nav-item">
-            <form class="search-form" action="#">
-              <i class="icon-search"></i>
-              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
-            </form>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
-              <i class="icon-mail icon-lg"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
-              <a class="dropdown-item py-3 border-bottom">
-                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
-                <span class="badge badge-pill badge-primary float-right">View all</span>
-              </a>
-              <a class="dropdown-item preview-item py-3">
-                <div class="preview-thumbnail">
-                  <i class="mdi mdi-alert m-auto text-primary"></i>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject fw-normal text-dark mb-1">Application Error</h6>
-                  <p class="fw-light small-text mb-0"> Just now </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item py-3">
-                <div class="preview-thumbnail">
-                  <i class="mdi mdi-settings m-auto text-primary"></i>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject fw-normal text-dark mb-1">Settings</h6>
-                  <p class="fw-light small-text mb-0"> Private message </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item py-3">
-                <div class="preview-thumbnail">
-                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject fw-normal text-dark mb-1">New user registration</h6>
-                  <p class="fw-light small-text mb-0"> 2 days ago </p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item dropdown"> 
-            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="icon-bell"></i>
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
-              <a class="dropdown-item py-3">
-                <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
-                <span class="badge badge-pill badge-primary float-right">View all</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="../../images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
-                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="../../images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
-                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="../../images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
-                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
-            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-              <div class="dropdown-header text-center">
-                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
-                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
-                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
-              </div>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
-            </div>
-          </li>
-        </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
-          <span class="mdi mdi-menu"></span>
-        </button>
-      </div>
-    </nav>
-    <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-      <!-- partial:../../partials/_settings-panel.html -->
-      <div class="theme-setting-wrapper">
-        <div id="settings-trigger"><i class="ti-settings"></i></div>
-        <div id="theme-settings" class="settings-panel">
-          <i class="settings-close ti-close"></i>
-          <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
-          <p class="settings-heading mt-2">HEADER SKINS</p>
-          <div class="color-tiles mx-0 px-4">
-            <div class="tiles success"></div>
-            <div class="tiles warning"></div>
-            <div class="tiles danger"></div>
-            <div class="tiles info"></div>
-            <div class="tiles dark"></div>
-            <div class="tiles default"></div>
-          </div>
-        </div>
-      </div>
-      <div id="right-sidebar" class="settings-panel">
-        <i class="settings-close ti-close"></i>
-        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
-          </li>
-        </ul>
-        <div class="tab-content" id="setting-content">
-          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
-            <div class="add-items d-flex px-3 mb-0">
-              <form class="form w-100">
-                <div class="form-group d-flex">
-                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
-                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
-                </div>
-              </form>
-            </div>
-            <div class="list-wrapper px-3">
-              <ul class="d-flex flex-column-reverse todo-list">
-                <li>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox">
-                      Team review meeting at 3.00 PM
-                    </label>
-                  </div>
-                  <i class="remove ti-close"></i>
-                </li>
-                <li>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox">
-                      Prepare for presentation
-                    </label>
-                  </div>
-                  <i class="remove ti-close"></i>
-                </li>
-                <li>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox">
-                      Resolve all the low priority tickets due today
-                    </label>
-                  </div>
-                  <i class="remove ti-close"></i>
-                </li>
-                <li class="completed">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox" checked>
-                      Schedule meeting for next week
-                    </label>
-                  </div>
-                  <i class="remove ti-close"></i>
-                </li>
-                <li class="completed">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox" checked>
-                      Project review
-                    </label>
-                  </div>
-                  <i class="remove ti-close"></i>
-                </li>
-              </ul>
-            </div>
-            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
-            <div class="events pt-4 px-3">
-              <div class="wrapper d-flex mb-2">
-                <i class="ti-control-record text-primary me-2"></i>
-                <span>Feb 11 2018</span>
-              </div>
-              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
-              <p class="text-gray mb-0">The total number of sessions</p>
-            </div>
-            <div class="events pt-4 px-3">
-              <div class="wrapper d-flex mb-2">
-                <i class="ti-control-record text-primary me-2"></i>
-                <span>Feb 7 2018</span>
-              </div>
-              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
-              <p class="text-gray mb-0 ">Call Sarah Graves</p>
-            </div>
-          </div>
-          <!-- To do section tab ends -->
-          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
-            <div class="d-flex align-items-center justify-content-between border-bottom">
-              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
-              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
-            </div>
-            <ul class="chat-list">
-              <li class="list active">
-                <div class="profile"><img src="../../images/faces/face1.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Thomas Douglas</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">19 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="../../images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <div class="wrapper d-flex">
-                    <p>Catherine</p>
-                  </div>
-                  <p>Away</p>
-                </div>
-                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
-                <small class="text-muted my-auto">23 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="../../images/faces/face3.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Daniel Russell</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">14 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="../../images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <p>James Richardson</p>
-                  <p>Away</p>
-                </div>
-                <small class="text-muted my-auto">2 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="../../images/faces/face5.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Madeline Kennedy</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">5 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="../../images/faces/face6.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Sarah Graves</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">47 min</small>
-              </li>
-            </ul>
-          </div>
-          <!-- chat tab ends -->
-        </div>
-      </div>
-      <!-- partial -->
-      <!-- partial:../../partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../../index.html">
-              <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item nav-category">UI Elements</li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="menu-icon mdi mdi-floor-plan"></i>
-              <span class="menu-title">UI Elements</span>
-              <i class="menu-arrow"></i> 
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item nav-category">Forms and Datas</li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-              <i class="menu-icon mdi mdi-card-text-outline"></i>
-              <span class="menu-title">Form elements</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Basic Elements</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-              <i class="menu-icon mdi mdi-chart-line"></i>
-              <span class="menu-title">Charts</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="charts">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/chartjs.html">ChartJs</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-              <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Tables</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="tables">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/basic-table.html">Basic table</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-              <i class="menu-icon mdi mdi-layers-outline"></i>
-              <span class="menu-title">Icons</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="icons">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/icons/mdi.html">Mdi icons</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item nav-category">pages</li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-account-circle-outline"></i>
-              <span class="menu-title">User Pages</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.html"> Login </a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item nav-category">help</li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
-              <i class="menu-icon mdi mdi-file-document"></i>
-              <span class="menu-title">Documentation</span>
-            </a>
-          </li>
-        </ul>
       </nav>
       <!-- partial -->
-      <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="row">
-
-            <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Group 1</h4>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                    </table>
-                  </div>
-                </div>
-              </div>
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_settings-panel.html -->
+        <div class="theme-setting-wrapper">
+          <div id="settings-trigger"><i class="ti-settings"></i></div>
+          <div id="theme-settings" class="settings-panel">
+            <i class="settings-close ti-close"></i>
+            <p class="settings-heading">SIDEBAR SKINS</p>
+            <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+              <div class="img-ss rounded-circle bg-light border me-3"></div>
+              Light
             </div>
-
-            <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Group 2</h4>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                    </table>
-                  </div>
-                </div>
-              </div>
+            <div class="sidebar-bg-options" id="sidebar-dark-theme">
+              <div class="img-ss rounded-circle bg-dark border me-3"></div>
+              Dark
             </div>
-
-            <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Group 3</h4>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Group 4</h4>
-                  <p class="card-description">
-                    Elite Big Men
-                  </p>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>Name</th>
-                          <th>Team</th>
-                          <th>PPG</th>
-                          <th>APG</th>
-                          <th>RPG</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="py-1">
-                            <img src="https://www.sports-reference.com/req/202111231/cbb/images/players/kofi-cockburn-1.jpg" alt="image"/>
-                          </td>
-                          <td>Kofi Cockburn</td>
-                          <td>20.9</td>
-                          <td>0.8</td>
-                          <td>10.6</td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="https://www.sports-reference.com/req/202111231/cbb/images/players/keegan-murray-1.jpg" alt="image"/>
-                          </td>
-                          <td>Keegan Murray</td>
-                          <td>23.5</td>
-                          <td>1.5</td>
-                          <td>8.7</td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="https://www.sports-reference.com/req/202111231/cbb/images/players/jonathan-davis-3.jpg" alt="image"/>
-                          </td>
-                          <td>Johnny Davis</td>
-                          <td>19.7</td>
-                          <td>2.1</td>
-                          <td>8.2</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
+            <p class="settings-heading mt-2">HEADER SKINS</p>
+            <div class="color-tiles mx-0 px-4">
+              <div class="tiles success"></div>
+              <div class="tiles warning"></div>
+              <div class="tiles danger"></div>
+              <div class="tiles info"></div>
+              <div class="tiles dark"></div>
+              <div class="tiles default"></div>
             </div>
           </div>
         </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+        <div id="right-sidebar" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="todo-tab"
+                data-bs-toggle="tab"
+                href="#todo-section"
+                role="tab"
+                aria-controls="todo-section"
+                aria-expanded="true"
+                >TO DO LIST</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="chats-tab"
+                data-bs-toggle="tab"
+                href="#chats-section"
+                role="tab"
+                aria-controls="chats-section"
+                >CHATS</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="setting-content">
+            <div
+              class="tab-pane fade show active scroll-wrapper"
+              id="todo-section"
+              role="tabpanel"
+              aria-labelledby="todo-section"
+            >
+              <div class="add-items d-flex px-3 mb-0">
+                <form class="form w-100">
+                  <div class="form-group d-flex">
+                    <input
+                      type="text"
+                      class="form-control todo-list-input"
+                      placeholder="Add To-do"
+                    />
+                    <button
+                      type="submit"
+                      class="add btn btn-primary todo-list-add-btn"
+                      id="add-task"
+                    >
+                      Add
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="list-wrapper px-3">
+                <ul class="d-flex flex-column-reverse todo-list">
+                  <li>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="checkbox" type="checkbox" />
+                        Team review meeting at 3.00 PM
+                      </label>
+                    </div>
+                    <i class="remove ti-close"></i>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="checkbox" type="checkbox" />
+                        Prepare for presentation
+                      </label>
+                    </div>
+                    <i class="remove ti-close"></i>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="checkbox" type="checkbox" />
+                        Resolve all the low priority tickets due today
+                      </label>
+                    </div>
+                    <i class="remove ti-close"></i>
+                  </li>
+                  <li class="completed">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="checkbox" type="checkbox" checked />
+                        Schedule meeting for next week
+                      </label>
+                    </div>
+                    <i class="remove ti-close"></i>
+                  </li>
+                  <li class="completed">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="checkbox" type="checkbox" checked />
+                        Project review
+                      </label>
+                    </div>
+                    <i class="remove ti-close"></i>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+              <div class="events pt-4 px-3">
+                <div class="wrapper d-flex mb-2">
+                  <i class="ti-control-record text-primary me-2"></i>
+                  <span>Feb 11 2018</span>
+                </div>
+                <p class="mb-0 font-weight-thin text-gray">
+                  Creating component page build a js
+                </p>
+                <p class="text-gray mb-0">The total number of sessions</p>
+              </div>
+              <div class="events pt-4 px-3">
+                <div class="wrapper d-flex mb-2">
+                  <i class="ti-control-record text-primary me-2"></i>
+                  <span>Feb 7 2018</span>
+                </div>
+                <p class="mb-0 font-weight-thin text-gray">
+                  Meeting with Alisa
+                </p>
+                <p class="text-gray mb-0">Call Sarah Graves</p>
+              </div>
+            </div>
+            <!-- To do section tab ends -->
+            <div
+              class="tab-pane fade"
+              id="chats-section"
+              role="tabpanel"
+              aria-labelledby="chats-section"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between border-bottom"
+              >
+                <p
+                  class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0"
+                >
+                  Friends
+                </p>
+                <small
+                  class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal"
+                  >See All</small
+                >
+              </div>
+              <ul class="chat-list">
+                <li class="list active">
+                  <div class="profile">
+                    <img src="../../images/faces/face1.jpg" alt="image" /><span
+                      class="online"
+                    ></span>
+                  </div>
+                  <div class="info">
+                    <p>Thomas Douglas</p>
+                    <p>Available</p>
+                  </div>
+                  <small class="text-muted my-auto">19 min</small>
+                </li>
+                <li class="list">
+                  <div class="profile">
+                    <img src="../../images/faces/face2.jpg" alt="image" /><span
+                      class="offline"
+                    ></span>
+                  </div>
+                  <div class="info">
+                    <div class="wrapper d-flex">
+                      <p>Catherine</p>
+                    </div>
+                    <p>Away</p>
+                  </div>
+                  <div class="badge badge-success badge-pill my-auto mx-2">
+                    4
+                  </div>
+                  <small class="text-muted my-auto">23 min</small>
+                </li>
+                <li class="list">
+                  <div class="profile">
+                    <img src="../../images/faces/face3.jpg" alt="image" /><span
+                      class="online"
+                    ></span>
+                  </div>
+                  <div class="info">
+                    <p>Daniel Russell</p>
+                    <p>Available</p>
+                  </div>
+                  <small class="text-muted my-auto">14 min</small>
+                </li>
+                <li class="list">
+                  <div class="profile">
+                    <img src="../../images/faces/face4.jpg" alt="image" /><span
+                      class="offline"
+                    ></span>
+                  </div>
+                  <div class="info">
+                    <p>James Richardson</p>
+                    <p>Away</p>
+                  </div>
+                  <small class="text-muted my-auto">2 min</small>
+                </li>
+                <li class="list">
+                  <div class="profile">
+                    <img src="../../images/faces/face5.jpg" alt="image" /><span
+                      class="online"
+                    ></span>
+                  </div>
+                  <div class="info">
+                    <p>Madeline Kennedy</p>
+                    <p>Available</p>
+                  </div>
+                  <small class="text-muted my-auto">5 min</small>
+                </li>
+                <li class="list">
+                  <div class="profile">
+                    <img src="../../images/faces/face6.jpg" alt="image" /><span
+                      class="online"
+                    ></span>
+                  </div>
+                  <div class="info">
+                    <p>Sarah Graves</p>
+                    <p>Available</p>
+                  </div>
+                  <small class="text-muted my-auto">47 min</small>
+                </li>
+              </ul>
+            </div>
+            <!-- chat tab ends -->
           </div>
-        </footer>
+        </div>
         <!-- partial -->
-      </div>
-      <!-- main-panel ends -->
-    </div>
-    <!-- page-body-wrapper ends -->
-  </div>
-  <!-- container-scroller -->
-  <!-- plugins:js -->
-  <script src="../../vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="../../js/off-canvas.js"></script>
-  <script src="../../js/hoverable-collapse.js"></script>
-  <script src="../../js/template.js"></script>
-  <script src="../../js/settings.js"></script>
-  <script src="../../js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <!-- End custom js for this page-->
-</body>
+        <!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <i class="mdi mdi-grid-large menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item nav-category">UI Elements</li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#ui-basic"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <i class="menu-icon mdi mdi-floor-plan"></i>
+                <span class="menu-title">UI Elements</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/ui-features/buttons.html"
+                      >Buttons</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/ui-features/dropdowns.html"
+                      >Dropdowns</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/ui-features/typography.html"
+                      >Typography</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-category">Forms and Datas</li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#form-elements"
+                aria-expanded="false"
+                aria-controls="form-elements"
+              >
+                <i class="menu-icon mdi mdi-card-text-outline"></i>
+                <span class="menu-title">Form elements</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="form-elements">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/forms/basic_elements.html"
+                      >Basic Elements</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#charts"
+                aria-expanded="false"
+                aria-controls="charts"
+              >
+                <i class="menu-icon mdi mdi-chart-line"></i>
+                <span class="menu-title">Charts</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/charts/chartjs.html"
+                      >ChartJs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#tables"
+                aria-expanded="false"
+                aria-controls="tables"
+              >
+                <i class="menu-icon mdi mdi-table"></i>
+                <span class="menu-title">Tables</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/tables/basic-table.html"
+                      >Basic table</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#icons"
+                aria-expanded="false"
+                aria-controls="icons"
+              >
+                <i class="menu-icon mdi mdi-layers-outline"></i>
+                <span class="menu-title">Icons</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/icons/mdi.html"
+                      >Mdi icons</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-category">pages</li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <i class="menu-icon mdi mdi-account-circle-outline"></i>
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/samples/login.html">
+                      Login
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-category">help</li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html"
+              >
+                <i class="menu-icon mdi mdi-file-document"></i>
+                <span class="menu-title">Documentation</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <!-- REPLACE THIS -->
 
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Group 1: Low-Usage, Yet Somewhat Efficient Players
+                    </h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Player</th>
+                            <th>PPG</th>
+                            <th>APG</th>
+                            <th>RPG</th>
+                            <th>SPG</th>
+                            <th>BPG</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Da'Monte Williams</td>
+                            <td>3.91</td>
+                            <td>2.45</td>
+                            <td>4.97</td>
+                            <td>0.82</td>
+                            <td>0.33</td>
+                            <td>30.7%</td>
+                            <td>32.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Omar Payne</td>
+                            <td>1.78</td>
+                            <td>0.16</td>
+                            <td>1.66</td>
+                            <td>0.09</td>
+                            <td>0.75</td>
+                            <td>61.8%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Luke Goode</td>
+                            <td>2.00</td>
+                            <td>0.54</td>
+                            <td>1.75</td>
+                            <td>0.04</td>
+                            <td>0.14</td>
+                            <td>32.7%</td>
+                            <td>37.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Benjamin Bosmans-Verdonk</td>
+                            <td>1.62</td>
+                            <td>0.62</td>
+                            <td>2.12</td>
+                            <td>0.29</td>
+                            <td>0.00</td>
+                            <td>47.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Anthony Leal</td>
+                            <td>1.94</td>
+                            <td>1.06</td>
+                            <td>0.94</td>
+                            <td>0.35</td>
+                            <td>0.06</td>
+                            <td>40.7%</td>
+                            <td>31.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Filip Rebraca</td>
+                            <td>5.78</td>
+                            <td>0.72</td>
+                            <td>5.61</td>
+                            <td>0.39</td>
+                            <td>0.67</td>
+                            <td>53.4%</td>
+                            <td>16.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Joe Toussaint</td>
+                            <td>4.31</td>
+                            <td>3.17</td>
+                            <td>1.69</td>
+                            <td>1.42</td>
+                            <td>0.03</td>
+                            <td>42.3%</td>
+                            <td>25.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Ahron Ulis</td>
+                            <td>3.14</td>
+                            <td>2.09</td>
+                            <td>1.97</td>
+                            <td>0.54</td>
+                            <td>0.00</td>
+                            <td>34.0%</td>
+                            <td>33.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Connor McCaffery</td>
+                            <td>2.50</td>
+                            <td>1.91</td>
+                            <td>2.50</td>
+                            <td>0.50</td>
+                            <td>0.00</td>
+                            <td>34.7%</td>
+                            <td>33.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Jaden Akins</td>
+                            <td>3.39</td>
+                            <td>0.69</td>
+                            <td>2.36</td>
+                            <td>0.61</td>
+                            <td>0.25</td>
+                            <td>39.4%</td>
+                            <td>38.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Mady Sissoko</td>
+                            <td>1.10</td>
+                            <td>0.03</td>
+                            <td>1.00</td>
+                            <td>0.03</td>
+                            <td>0.43</td>
+                            <td>63.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Terrance Williams II</td>
+                            <td>4.71</td>
+                            <td>0.52</td>
+                            <td>2.35</td>
+                            <td>0.13</td>
+                            <td>0.03</td>
+                            <td>45.5%</td>
+                            <td>38.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Treyton Thompson</td>
+                            <td>1.95</td>
+                            <td>0.26</td>
+                            <td>1.16</td>
+                            <td>0.16</td>
+                            <td>0.32</td>
+                            <td>46.7%</td>
+                            <td>40.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Eduardo Andre</td>
+                            <td>3.13</td>
+                            <td>0.30</td>
+                            <td>3.20</td>
+                            <td>0.57</td>
+                            <td>0.53</td>
+                            <td>57.1%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Ryan Greer</td>
+                            <td>3.87</td>
+                            <td>2.13</td>
+                            <td>1.90</td>
+                            <td>0.55</td>
+                            <td>0.00</td>
+                            <td>39.6%</td>
+                            <td>40.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Julian Roper II</td>
+                            <td>4.00</td>
+                            <td>0.97</td>
+                            <td>3.41</td>
+                            <td>0.86</td>
+                            <td>0.48</td>
+                            <td>34.2%</td>
+                            <td>35.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Eugene Brown III</td>
+                            <td>3.46</td>
+                            <td>0.54</td>
+                            <td>2.42</td>
+                            <td>0.19</td>
+                            <td>0.27</td>
+                            <td>44.2%</td>
+                            <td>22.9%</td>
+                          </tr>
+                          <tr>
+                            <td>Joey Brunk</td>
+                            <td>2.43</td>
+                            <td>0.21</td>
+                            <td>1.61</td>
+                            <td>0.21</td>
+                            <td>0.21</td>
+                            <td>63.0%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Jimmy Sotos</td>
+                            <td>1.79</td>
+                            <td>1.32</td>
+                            <td>0.68</td>
+                            <td>0.11</td>
+                            <td>0.11</td>
+                            <td>52.6%</td>
+                            <td>60.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Jalanni White</td>
+                            <td>2.32</td>
+                            <td>0.32</td>
+                            <td>2.54</td>
+                            <td>0.25</td>
+                            <td>0.32</td>
+                            <td>51.9%</td>
+                            <td>12.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Mason Gillis</td>
+                            <td>6.36</td>
+                            <td>1.06</td>
+                            <td>4.82</td>
+                            <td>0.36</td>
+                            <td>0.21</td>
+                            <td>49.6%</td>
+                            <td>41.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Isaiah Thompson</td>
+                            <td>4.19</td>
+                            <td>0.95</td>
+                            <td>0.97</td>
+                            <td>0.16</td>
+                            <td>0.08</td>
+                            <td>43.6%</td>
+                            <td>42.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Caleb Furst</td>
+                            <td>4.06</td>
+                            <td>0.38</td>
+                            <td>3.21</td>
+                            <td>0.18</td>
+                            <td>0.24</td>
+                            <td>57.3%</td>
+                            <td>42.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Ethan Morton</td>
+                            <td>2.43</td>
+                            <td>1.35</td>
+                            <td>1.43</td>
+                            <td>0.59</td>
+                            <td>0.22</td>
+                            <td>47.7%</td>
+                            <td>44.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Oskar Palmquist</td>
+                            <td>1.47</td>
+                            <td>0.40</td>
+                            <td>0.67</td>
+                            <td>0.13</td>
+                            <td>0.00</td>
+                            <td>41.2%</td>
+                            <td>45.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Chris Vogt</td>
+                            <td>2.94</td>
+                            <td>0.64</td>
+                            <td>3.12</td>
+                            <td>0.33</td>
+                            <td>0.79</td>
+                            <td>50.0%</td>
+                            <td>0.0%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Group 2: Efficient Interior Players
+                    </h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Player</th>
+                            <th>PPG</th>
+                            <th>APG</th>
+                            <th>RPG</th>
+                            <th>SPG</th>
+                            <th>BPG</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>RJ Melendez</td>
+                            <td>3.82</td>
+                            <td>0.68</td>
+                            <td>1.68</td>
+                            <td>0.27</td>
+                            <td>0.14</td>
+                            <td>56.9%</td>
+                            <td>60.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Race Thompson</td>
+                            <td>11.06</td>
+                            <td>1.43</td>
+                            <td>7.51</td>
+                            <td>1.06</td>
+                            <td>0.69</td>
+                            <td>53.6%</td>
+                            <td>27.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Kris Murray</td>
+                            <td>9.71</td>
+                            <td>1.06</td>
+                            <td>4.26</td>
+                            <td>0.83</td>
+                            <td>0.89</td>
+                            <td>47.9%</td>
+                            <td>38.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Austin Ash</td>
+                            <td>2.89</td>
+                            <td>0.61</td>
+                            <td>0.56</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>43.6%</td>
+                            <td>30.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Marcus Bingham</td>
+                            <td>9.29</td>
+                            <td>0.26</td>
+                            <td>6.26</td>
+                            <td>0.91</td>
+                            <td>2.20</td>
+                            <td>53.4%</td>
+                            <td>41.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Ryan Young</td>
+                            <td>8.97</td>
+                            <td>0.94</td>
+                            <td>4.23</td>
+                            <td>0.35</td>
+                            <td>0.32</td>
+                            <td>55.9%</td>
+                            <td>16.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Zed Key</td>
+                            <td>7.79</td>
+                            <td>0.52</td>
+                            <td>5.62</td>
+                            <td>0.21</td>
+                            <td>0.83</td>
+                            <td>56.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>John Harrar</td>
+                            <td>10.58</td>
+                            <td>1.23</td>
+                            <td>10.32</td>
+                            <td>0.52</td>
+                            <td>0.23</td>
+                            <td>64.0%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Clifford Omoruyi</td>
+                            <td>11.94</td>
+                            <td>0.38</td>
+                            <td>7.81</td>
+                            <td>0.53</td>
+                            <td>1.25</td>
+                            <td>62.4%</td>
+                            <td>16.7%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Group 3: 3rd String Players</h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Player</th>
+                            <th>PPG</th>
+                            <th>APG</th>
+                            <th>RPG</th>
+                            <th>SPG</th>
+                            <th>BPG</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Brandin Podziemski</td>
+                            <td>1.38</td>
+                            <td>0.31</td>
+                            <td>0.94</td>
+                            <td>0.06</td>
+                            <td>0.00</td>
+                            <td>42.1%</td>
+                            <td>23.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Tamar Bates</td>
+                            <td>3.91</td>
+                            <td>0.62</td>
+                            <td>1.25</td>
+                            <td>0.25</td>
+                            <td>0.12</td>
+                            <td>33.8%</td>
+                            <td>29.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Rob Phinisee</td>
+                            <td>4.48</td>
+                            <td>1.72</td>
+                            <td>2.08</td>
+                            <td>0.80</td>
+                            <td>0.20</td>
+                            <td>31.2%</td>
+                            <td>26.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Khristian Lander</td>
+                            <td>2.92</td>
+                            <td>0.92</td>
+                            <td>0.77</td>
+                            <td>0.31</td>
+                            <td>0.08</td>
+                            <td>45.2%</td>
+                            <td>33.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Josh Ogundele</td>
+                            <td>1.53</td>
+                            <td>0.00</td>
+                            <td>1.26</td>
+                            <td>0.21</td>
+                            <td>0.26</td>
+                            <td>54.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Ian Martinez</td>
+                            <td>2.82</td>
+                            <td>1.11</td>
+                            <td>1.64</td>
+                            <td>0.79</td>
+                            <td>0.25</td>
+                            <td>32.9%</td>
+                            <td>26.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Pierre Brooks</td>
+                            <td>0.92</td>
+                            <td>0.16</td>
+                            <td>0.48</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>30.0%</td>
+                            <td>18.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Brandon Johns Jr</td>
+                            <td>3.23</td>
+                            <td>0.35</td>
+                            <td>1.97</td>
+                            <td>0.26</td>
+                            <td>0.29</td>
+                            <td>36.1%</td>
+                            <td>29.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Frankie Collins</td>
+                            <td>2.84</td>
+                            <td>1.39</td>
+                            <td>1.71</td>
+                            <td>0.39</td>
+                            <td>0.06</td>
+                            <td>42.7%</td>
+                            <td>16.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Kobe Bufkin</td>
+                            <td>3.04</td>
+                            <td>0.29</td>
+                            <td>1.14</td>
+                            <td>0.39</td>
+                            <td>0.11</td>
+                            <td>38.0%</td>
+                            <td>22.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Jace Howard</td>
+                            <td>1.14</td>
+                            <td>0.21</td>
+                            <td>0.50</td>
+                            <td>0.14</td>
+                            <td>0.14</td>
+                            <td>42.9%</td>
+                            <td>14.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Jaron Faulds</td>
+                            <td>0.87</td>
+                            <td>0.07</td>
+                            <td>0.67</td>
+                            <td>0.07</td>
+                            <td>0.07</td>
+                            <td>41.7%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Wilhelm Breidenbach</td>
+                            <td>3.70</td>
+                            <td>0.60</td>
+                            <td>2.70</td>
+                            <td>1.00</td>
+                            <td>0.60</td>
+                            <td>35.9%</td>
+                            <td>15.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Elyjah Williams</td>
+                            <td>3.31</td>
+                            <td>0.72</td>
+                            <td>2.07</td>
+                            <td>0.38</td>
+                            <td>0.10</td>
+                            <td>47.2%</td>
+                            <td>21.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Casey Simmons</td>
+                            <td>2.52</td>
+                            <td>0.48</td>
+                            <td>1.52</td>
+                            <td>0.44</td>
+                            <td>0.07</td>
+                            <td>41.3%</td>
+                            <td>25.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Brooks Barnhizer</td>
+                            <td>1.73</td>
+                            <td>1.00</td>
+                            <td>0.73</td>
+                            <td>0.55</td>
+                            <td>0.27</td>
+                            <td>23.1%</td>
+                            <td>18.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Cedric Russell</td>
+                            <td>4.23</td>
+                            <td>0.43</td>
+                            <td>0.63</td>
+                            <td>0.13</td>
+                            <td>0.00</td>
+                            <td>43.8%</td>
+                            <td>43.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Meechie Johnson Jr.</td>
+                            <td>4.42</td>
+                            <td>1.19</td>
+                            <td>1.54</td>
+                            <td>0.65</td>
+                            <td>0.12</td>
+                            <td>30.8%</td>
+                            <td>32.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Dallion Johnson</td>
+                            <td>3.66</td>
+                            <td>0.34</td>
+                            <td>1.17</td>
+                            <td>0.14</td>
+                            <td>0.00</td>
+                            <td>34.6%</td>
+                            <td>36.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Jevonnie Scott</td>
+                            <td>1.36</td>
+                            <td>0.18</td>
+                            <td>1.64</td>
+                            <td>0.18</td>
+                            <td>0.27</td>
+                            <td>40.0%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Brandon Newman</td>
+                            <td>4.64</td>
+                            <td>0.64</td>
+                            <td>1.88</td>
+                            <td>0.40</td>
+                            <td>0.20</td>
+                            <td>32.1%</td>
+                            <td>32.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Aundre Hyatt</td>
+                            <td>4.28</td>
+                            <td>0.66</td>
+                            <td>2.81</td>
+                            <td>0.22</td>
+                            <td>0.25</td>
+                            <td>35.3%</td>
+                            <td>27.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Mawot Mag</td>
+                            <td>2.93</td>
+                            <td>0.43</td>
+                            <td>1.86</td>
+                            <td>0.29</td>
+                            <td>0.25</td>
+                            <td>41.3%</td>
+                            <td>23.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Jaden Jones</td>
+                            <td>3.65</td>
+                            <td>0.18</td>
+                            <td>1.18</td>
+                            <td>0.12</td>
+                            <td>0.12</td>
+                            <td>36.4%</td>
+                            <td>23.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Ralph Agee</td>
+                            <td>1.94</td>
+                            <td>0.24</td>
+                            <td>1.06</td>
+                            <td>0.12</td>
+                            <td>0.12</td>
+                            <td>46.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Lorne Bowman II</td>
+                            <td>3.00</td>
+                            <td>0.50</td>
+                            <td>1.09</td>
+                            <td>0.27</td>
+                            <td>0.00</td>
+                            <td>34.4%</td>
+                            <td>40.0%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Group 4: Elite Big Men</h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Player</th>
+                            <th>PPG</th>
+                            <th>APG</th>
+                            <th>RPG</th>
+                            <th>SPG</th>
+                            <th>BPG</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Kofi Cockburn</td>
+                            <td>20.89</td>
+                            <td>0.79</td>
+                            <td>10.57</td>
+                            <td>0.82</td>
+                            <td>0.96</td>
+                            <td>59.3%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Trayce Jackson-Davis</td>
+                            <td>18.26</td>
+                            <td>1.89</td>
+                            <td>8.11</td>
+                            <td>0.63</td>
+                            <td>2.31</td>
+                            <td>58.9%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Keegan Murray</td>
+                            <td>23.49</td>
+                            <td>1.49</td>
+                            <td>8.66</td>
+                            <td>1.29</td>
+                            <td>1.94</td>
+                            <td>55.4%</td>
+                            <td>39.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Hunter Dickinson</td>
+                            <td>18.56</td>
+                            <td>2.28</td>
+                            <td>8.56</td>
+                            <td>0.47</td>
+                            <td>1.53</td>
+                            <td>56.3%</td>
+                            <td>32.8%</td>
+                          </tr>
+                          <tr>
+                            <td>E.J. Liddell</td>
+                            <td>19.41</td>
+                            <td>2.50</td>
+                            <td>7.94</td>
+                            <td>0.56</td>
+                            <td>2.59</td>
+                            <td>49.0%</td>
+                            <td>37.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Zach Edey</td>
+                            <td>14.41</td>
+                            <td>1.19</td>
+                            <td>7.70</td>
+                            <td>0.24</td>
+                            <td>1.24</td>
+                            <td>64.8%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Trevion Williams</td>
+                            <td>11.97</td>
+                            <td>3.03</td>
+                            <td>7.43</td>
+                            <td>0.95</td>
+                            <td>0.62</td>
+                            <td>54.7%</td>
+                            <td>35.7%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Group 5: Average Role-Players</h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Player</th>
+                            <th>PPG</th>
+                            <th>APG</th>
+                            <th>RPG</th>
+                            <th>SPG</th>
+                            <th>BPG</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Trent Frazier</td>
+                            <td>11.61</td>
+                            <td>4.06</td>
+                            <td>2.81</td>
+                            <td>1.32</td>
+                            <td>0.13</td>
+                            <td>39.7%</td>
+                            <td>32.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Jacob Grandison</td>
+                            <td>9.57</td>
+                            <td>2.30</td>
+                            <td>3.83</td>
+                            <td>0.33</td>
+                            <td>0.17</td>
+                            <td>45.5%</td>
+                            <td>41.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Coleman Hawkins</td>
+                            <td>5.88</td>
+                            <td>1.52</td>
+                            <td>4.27</td>
+                            <td>0.79</td>
+                            <td>0.52</td>
+                            <td>44.2%</td>
+                            <td>29.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Jordan Geronimo</td>
+                            <td>4.35</td>
+                            <td>0.26</td>
+                            <td>3.56</td>
+                            <td>0.26</td>
+                            <td>0.71</td>
+                            <td>51.8%</td>
+                            <td>31.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Jordan Bohannon</td>
+                            <td>10.97</td>
+                            <td>1.81</td>
+                            <td>1.33</td>
+                            <td>0.75</td>
+                            <td>0.00</td>
+                            <td>38.5%</td>
+                            <td>38.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Patrick McCaffery</td>
+                            <td>10.50</td>
+                            <td>1.56</td>
+                            <td>3.56</td>
+                            <td>0.59</td>
+                            <td>0.47</td>
+                            <td>42.2%</td>
+                            <td>33.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Tony Perkins</td>
+                            <td>7.42</td>
+                            <td>1.64</td>
+                            <td>2.44</td>
+                            <td>0.89</td>
+                            <td>0.08</td>
+                            <td>44.6%</td>
+                            <td>32.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Payton Sandfort</td>
+                            <td>5.03</td>
+                            <td>0.65</td>
+                            <td>1.91</td>
+                            <td>0.15</td>
+                            <td>0.12</td>
+                            <td>41.8%</td>
+                            <td>36.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Hakim Hart</td>
+                            <td>9.91</td>
+                            <td>1.88</td>
+                            <td>3.56</td>
+                            <td>1.53</td>
+                            <td>0.38</td>
+                            <td>52.7%</td>
+                            <td>33.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Qudus Wahab</td>
+                            <td>7.69</td>
+                            <td>0.38</td>
+                            <td>5.62</td>
+                            <td>0.22</td>
+                            <td>0.75</td>
+                            <td>55.9%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Julian Reese</td>
+                            <td>5.69</td>
+                            <td>0.41</td>
+                            <td>4.44</td>
+                            <td>0.44</td>
+                            <td>0.72</td>
+                            <td>45.6%</td>
+                            <td>30.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Gabe Brown</td>
+                            <td>11.61</td>
+                            <td>1.14</td>
+                            <td>3.81</td>
+                            <td>0.69</td>
+                            <td>0.28</td>
+                            <td>42.8%</td>
+                            <td>38.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Malik Hall</td>
+                            <td>8.89</td>
+                            <td>1.08</td>
+                            <td>4.61</td>
+                            <td>0.58</td>
+                            <td>0.19</td>
+                            <td>51.5%</td>
+                            <td>42.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Tyson Walker</td>
+                            <td>8.22</td>
+                            <td>4.25</td>
+                            <td>1.31</td>
+                            <td>0.94</td>
+                            <td>0.14</td>
+                            <td>42.7%</td>
+                            <td>47.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Joey Hauser</td>
+                            <td>7.26</td>
+                            <td>1.66</td>
+                            <td>5.34</td>
+                            <td>0.31</td>
+                            <td>0.17</td>
+                            <td>44.6%</td>
+                            <td>40.8%</td>
+                          </tr>
+                          <tr>
+                            <td>A.J. Hoggard</td>
+                            <td>7.00</td>
+                            <td>4.83</td>
+                            <td>2.28</td>
+                            <td>0.69</td>
+                            <td>0.47</td>
+                            <td>43.9%</td>
+                            <td>21.9%</td>
+                          </tr>
+                          <tr>
+                            <td>Julius Marble</td>
+                            <td>6.36</td>
+                            <td>0.25</td>
+                            <td>3.33</td>
+                            <td>0.33</td>
+                            <td>0.53</td>
+                            <td>59.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Eli Brooks</td>
+                            <td>12.79</td>
+                            <td>2.94</td>
+                            <td>3.71</td>
+                            <td>1.18</td>
+                            <td>0.12</td>
+                            <td>44.4%</td>
+                            <td>39.4%</td>
+                          </tr>
+                          <tr>
+                            <td>DeVante Jones</td>
+                            <td>10.30</td>
+                            <td>4.58</td>
+                            <td>4.52</td>
+                            <td>0.94</td>
+                            <td>0.12</td>
+                            <td>46.3%</td>
+                            <td>34.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Moussa Diabate</td>
+                            <td>9.03</td>
+                            <td>0.81</td>
+                            <td>5.97</td>
+                            <td>0.34</td>
+                            <td>0.88</td>
+                            <td>54.2%</td>
+                            <td>21.4%</td>
+                          </tr>
+                          <tr>
+                            <td>E.J. Stephens</td>
+                            <td>10.21</td>
+                            <td>1.55</td>
+                            <td>3.14</td>
+                            <td>0.93</td>
+                            <td>0.07</td>
+                            <td>42.0%</td>
+                            <td>38.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Sean Sutherlin</td>
+                            <td>7.21</td>
+                            <td>1.04</td>
+                            <td>3.64</td>
+                            <td>0.82</td>
+                            <td>0.32</td>
+                            <td>48.0%</td>
+                            <td>23.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Eric Curry</td>
+                            <td>7.69</td>
+                            <td>1.92</td>
+                            <td>5.77</td>
+                            <td>0.88</td>
+                            <td>0.73</td>
+                            <td>41.2%</td>
+                            <td>8.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Derrick Walker</td>
+                            <td>9.47</td>
+                            <td>1.41</td>
+                            <td>6.03</td>
+                            <td>0.75</td>
+                            <td>0.91</td>
+                            <td>68.3%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Matthew Nicholson</td>
+                            <td>1.80</td>
+                            <td>0.33</td>
+                            <td>1.33</td>
+                            <td>0.07</td>
+                            <td>0.20</td>
+                            <td>69.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Kyle Young</td>
+                            <td>8.19</td>
+                            <td>1.22</td>
+                            <td>5.00</td>
+                            <td>0.48</td>
+                            <td>0.56</td>
+                            <td>50.0%</td>
+                            <td>29.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Sasha Stefanovic</td>
+                            <td>10.38</td>
+                            <td>3.00</td>
+                            <td>2.46</td>
+                            <td>0.35</td>
+                            <td>0.19</td>
+                            <td>39.2%</td>
+                            <td>38.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Paul Mulcahy</td>
+                            <td>9.00</td>
+                            <td>5.28</td>
+                            <td>4.12</td>
+                            <td>1.12</td>
+                            <td>0.25</td>
+                            <td>43.8%</td>
+                            <td>34.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Dean Reiber</td>
+                            <td>2.93</td>
+                            <td>0.43</td>
+                            <td>1.29</td>
+                            <td>0.29</td>
+                            <td>0.39</td>
+                            <td>53.1%</td>
+                            <td>58.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Tyler Wahl</td>
+                            <td>11.44</td>
+                            <td>1.53</td>
+                            <td>5.91</td>
+                            <td>1.16</td>
+                            <td>0.78</td>
+                            <td>51.6%</td>
+                            <td>16.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Steven Crowl</td>
+                            <td>8.79</td>
+                            <td>1.45</td>
+                            <td>4.36</td>
+                            <td>0.27</td>
+                            <td>0.27</td>
+                            <td>49.6%</td>
+                            <td>31.7%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Group 6: Play-Making Wings</h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Player</th>
+                            <th>PPG</th>
+                            <th>APG</th>
+                            <th>RPG</th>
+                            <th>SPG</th>
+                            <th>BPG</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Alfonso Plummer</td>
+                            <td>14.61</td>
+                            <td>1.06</td>
+                            <td>2.45</td>
+                            <td>0.30</td>
+                            <td>0.00</td>
+                            <td>42.4%</td>
+                            <td>40.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Andre Curbelo</td>
+                            <td>7.47</td>
+                            <td>3.16</td>
+                            <td>3.05</td>
+                            <td>0.74</td>
+                            <td>0.11</td>
+                            <td>32.9%</td>
+                            <td>17.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Xavier Johnson</td>
+                            <td>12.15</td>
+                            <td>5.06</td>
+                            <td>3.76</td>
+                            <td>1.18</td>
+                            <td>0.15</td>
+                            <td>40.6%</td>
+                            <td>38.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Fatts Russell</td>
+                            <td>15.09</td>
+                            <td>3.72</td>
+                            <td>4.09</td>
+                            <td>1.34</td>
+                            <td>0.16</td>
+                            <td>41.0%</td>
+                            <td>34.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Eric Ayala</td>
+                            <td>14.68</td>
+                            <td>2.10</td>
+                            <td>4.65</td>
+                            <td>0.77</td>
+                            <td>0.13</td>
+                            <td>38.3%</td>
+                            <td>33.9%</td>
+                          </tr>
+                          <tr>
+                            <td>Donta Scott</td>
+                            <td>12.59</td>
+                            <td>1.22</td>
+                            <td>6.19</td>
+                            <td>0.81</td>
+                            <td>0.75</td>
+                            <td>42.7%</td>
+                            <td>29.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Jamison Battle</td>
+                            <td>17.48</td>
+                            <td>0.97</td>
+                            <td>6.31</td>
+                            <td>0.38</td>
+                            <td>0.41</td>
+                            <td>45.0%</td>
+                            <td>36.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Payton Willis</td>
+                            <td>15.93</td>
+                            <td>4.28</td>
+                            <td>4.79</td>
+                            <td>1.45</td>
+                            <td>0.48</td>
+                            <td>47.3%</td>
+                            <td>42.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Bryce McGowens</td>
+                            <td>16.84</td>
+                            <td>1.39</td>
+                            <td>5.19</td>
+                            <td>0.71</td>
+                            <td>0.32</td>
+                            <td>40.3%</td>
+                            <td>27.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Alonzo Verge Jr.</td>
+                            <td>14.45</td>
+                            <td>5.45</td>
+                            <td>4.52</td>
+                            <td>1.61</td>
+                            <td>0.23</td>
+                            <td>45.6%</td>
+                            <td>31.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Pete Nance</td>
+                            <td>14.57</td>
+                            <td>2.70</td>
+                            <td>6.47</td>
+                            <td>0.30</td>
+                            <td>1.13</td>
+                            <td>49.7%</td>
+                            <td>45.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Boo Buie</td>
+                            <td>14.06</td>
+                            <td>4.32</td>
+                            <td>2.52</td>
+                            <td>0.77</td>
+                            <td>0.10</td>
+                            <td>39.7%</td>
+                            <td>34.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Chase Audige</td>
+                            <td>9.83</td>
+                            <td>1.92</td>
+                            <td>4.21</td>
+                            <td>1.75</td>
+                            <td>0.33</td>
+                            <td>33.8%</td>
+                            <td>25.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Malaki Branham</td>
+                            <td>13.66</td>
+                            <td>2.00</td>
+                            <td>3.56</td>
+                            <td>0.72</td>
+                            <td>0.28</td>
+                            <td>49.8%</td>
+                            <td>41.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Jalen Pickett</td>
+                            <td>13.32</td>
+                            <td>4.35</td>
+                            <td>4.29</td>
+                            <td>1.13</td>
+                            <td>0.61</td>
+                            <td>42.0%</td>
+                            <td>32.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Sam Sessoms</td>
+                            <td>11.58</td>
+                            <td>2.65</td>
+                            <td>3.06</td>
+                            <td>0.81</td>
+                            <td>0.06</td>
+                            <td>44.8%</td>
+                            <td>42.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Seth Lundy</td>
+                            <td>11.87</td>
+                            <td>0.70</td>
+                            <td>4.87</td>
+                            <td>1.00</td>
+                            <td>0.67</td>
+                            <td>39.5%</td>
+                            <td>34.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Jaden Ivey</td>
+                            <td>17.33</td>
+                            <td>3.06</td>
+                            <td>4.89</td>
+                            <td>0.92</td>
+                            <td>0.56</td>
+                            <td>46.0%</td>
+                            <td>35.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Ron Harper Jr.</td>
+                            <td>15.84</td>
+                            <td>1.91</td>
+                            <td>5.88</td>
+                            <td>1.03</td>
+                            <td>0.62</td>
+                            <td>44.2%</td>
+                            <td>39.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Geo Baker</td>
+                            <td>12.64</td>
+                            <td>3.86</td>
+                            <td>2.14</td>
+                            <td>1.18</td>
+                            <td>0.43</td>
+                            <td>39.8%</td>
+                            <td>33.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Johnny Davis</td>
+                            <td>19.74</td>
+                            <td>2.13</td>
+                            <td>8.23</td>
+                            <td>1.16</td>
+                            <td>0.74</td>
+                            <td>42.7%</td>
+                            <td>30.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Brad Davison</td>
+                            <td>14.06</td>
+                            <td>2.09</td>
+                            <td>4.00</td>
+                            <td>0.85</td>
+                            <td>0.00</td>
+                            <td>38.4%</td>
+                            <td>34.7%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Group 7: Garbage-Time Substitutions
+                    </h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Player</th>
+                            <th>PPG</th>
+                            <th>APG</th>
+                            <th>RPG</th>
+                            <th>SPG</th>
+                            <th>BPG</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Michael Durr</td>
+                            <td>1.50</td>
+                            <td>0.47</td>
+                            <td>1.03</td>
+                            <td>0.10</td>
+                            <td>0.23</td>
+                            <td>38.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Riley Mulvey</td>
+                            <td>0.94</td>
+                            <td>0.12</td>
+                            <td>0.88</td>
+                            <td>0.00</td>
+                            <td>0.29</td>
+                            <td>50.0%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Xavier Green</td>
+                            <td>2.34</td>
+                            <td>0.88</td>
+                            <td>2.50</td>
+                            <td>0.50</td>
+                            <td>0.09</td>
+                            <td>37.5%</td>
+                            <td>36.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Simon Wright</td>
+                            <td>0.45</td>
+                            <td>0.10</td>
+                            <td>0.45</td>
+                            <td>0.05</td>
+                            <td>0.00</td>
+                            <td>66.7%</td>
+                            <td>100.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Charlie Daniels</td>
+                            <td>1.48</td>
+                            <td>0.79</td>
+                            <td>1.83</td>
+                            <td>0.34</td>
+                            <td>0.55</td>
+                            <td>43.2%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Keon Edwards</td>
+                            <td>0.53</td>
+                            <td>0.11</td>
+                            <td>0.74</td>
+                            <td>0.11</td>
+                            <td>0.00</td>
+                            <td>19.0%</td>
+                            <td>6.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Jaheam Cornwall</td>
+                            <td>2.36</td>
+                            <td>0.64</td>
+                            <td>0.92</td>
+                            <td>0.24</td>
+                            <td>0.08</td>
+                            <td>23.7%</td>
+                            <td>18.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Caleb Dorsey</td>
+                            <td>0.92</td>
+                            <td>0.17</td>
+                            <td>0.58</td>
+                            <td>0.25</td>
+                            <td>0.08</td>
+                            <td>27.3%</td>
+                            <td>33.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Jalen Miller</td>
+                            <td>0.62</td>
+                            <td>0.33</td>
+                            <td>0.58</td>
+                            <td>0.29</td>
+                            <td>0.08</td>
+                            <td>35.3%</td>
+                            <td>0.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Ben Carlson</td>
+                            <td>1.62</td>
+                            <td>0.12</td>
+                            <td>2.03</td>
+                            <td>0.06</td>
+                            <td>0.03</td>
+                            <td>33.3%</td>
+                            <td>4.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Jahcobi Neath</td>
+                            <td>1.61</td>
+                            <td>0.35</td>
+                            <td>1.48</td>
+                            <td>0.17</td>
+                            <td>0.04</td>
+                            <td>25.6%</td>
+                            <td>22.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Jordan Davis</td>
+                            <td>1.30</td>
+                            <td>0.15</td>
+                            <td>0.89</td>
+                            <td>0.15</td>
+                            <td>0.11</td>
+                            <td>32.5%</td>
+                            <td>28.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Carter Gilmore</td>
+                            <td>0.86</td>
+                            <td>0.36</td>
+                            <td>1.00</td>
+                            <td>0.09</td>
+                            <td>0.18</td>
+                            <td>25.9%</td>
+                            <td>7.7%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Group 8: Miscellaneous Archetypes
+                    </h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Player</th>
+                            <th>PPG</th>
+                            <th>APG</th>
+                            <th>RPG</th>
+                            <th>SPG</th>
+                            <th>BPG</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Parker Stewart</td>
+                            <td>6.21</td>
+                            <td>0.97</td>
+                            <td>2.12</td>
+                            <td>0.41</td>
+                            <td>0.06</td>
+                            <td>37.4%</td>
+                            <td>39.3%</td>
+                          </tr>
+                          <tr>
+                            <td>Miller Kopp</td>
+                            <td>5.97</td>
+                            <td>1.06</td>
+                            <td>2.54</td>
+                            <td>0.43</td>
+                            <td>0.26</td>
+                            <td>35.6%</td>
+                            <td>36.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Trey Galloway</td>
+                            <td>5.45</td>
+                            <td>1.80</td>
+                            <td>1.65</td>
+                            <td>0.90</td>
+                            <td>0.25</td>
+                            <td>46.4%</td>
+                            <td>21.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Max Christie</td>
+                            <td>9.26</td>
+                            <td>1.46</td>
+                            <td>3.46</td>
+                            <td>0.51</td>
+                            <td>0.49</td>
+                            <td>38.2%</td>
+                            <td>31.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Caleb Houstan</td>
+                            <td>10.09</td>
+                            <td>1.35</td>
+                            <td>3.97</td>
+                            <td>0.74</td>
+                            <td>0.24</td>
+                            <td>38.4%</td>
+                            <td>35.5%</td>
+                          </tr>
+                          <tr>
+                            <td>Luke Loewe</td>
+                            <td>8.13</td>
+                            <td>2.40</td>
+                            <td>2.37</td>
+                            <td>0.57</td>
+                            <td>0.03</td>
+                            <td>39.8%</td>
+                            <td>33.3%</td>
+                          </tr>
+                          <tr>
+                            <td>C.J. Wilcher</td>
+                            <td>8.06</td>
+                            <td>0.81</td>
+                            <td>2.28</td>
+                            <td>0.78</td>
+                            <td>0.09</td>
+                            <td>46.2%</td>
+                            <td>40.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Kobe Webster</td>
+                            <td>6.17</td>
+                            <td>1.30</td>
+                            <td>1.47</td>
+                            <td>0.50</td>
+                            <td>0.00</td>
+                            <td>37.5%</td>
+                            <td>36.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Lat Mayen</td>
+                            <td>5.94</td>
+                            <td>0.71</td>
+                            <td>3.81</td>
+                            <td>0.42</td>
+                            <td>0.32</td>
+                            <td>38.7%</td>
+                            <td>29.9%</td>
+                          </tr>
+                          <tr>
+                            <td>Keisei Tominaga</td>
+                            <td>5.67</td>
+                            <td>0.60</td>
+                            <td>1.50</td>
+                            <td>0.77</td>
+                            <td>0.03</td>
+                            <td>37.3%</td>
+                            <td>33.0%</td>
+                          </tr>
+                          <tr>
+                            <td>Trey McGowens</td>
+                            <td>6.76</td>
+                            <td>1.53</td>
+                            <td>4.06</td>
+                            <td>1.59</td>
+                            <td>0.24</td>
+                            <td>40.9%</td>
+                            <td>36.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Ty Berry</td>
+                            <td>7.42</td>
+                            <td>1.10</td>
+                            <td>2.26</td>
+                            <td>0.68</td>
+                            <td>0.13</td>
+                            <td>38.8%</td>
+                            <td>38.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Robbie Beran</td>
+                            <td>6.35</td>
+                            <td>0.65</td>
+                            <td>4.26</td>
+                            <td>0.68</td>
+                            <td>0.74</td>
+                            <td>46.8%</td>
+                            <td>36.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Jamari Wheeler</td>
+                            <td>7.13</td>
+                            <td>2.94</td>
+                            <td>3.16</td>
+                            <td>1.26</td>
+                            <td>0.06</td>
+                            <td>45.8%</td>
+                            <td>38.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Justin Ahrens</td>
+                            <td>4.84</td>
+                            <td>0.81</td>
+                            <td>2.34</td>
+                            <td>0.28</td>
+                            <td>0.03</td>
+                            <td>34.6%</td>
+                            <td>35.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Myles Dread</td>
+                            <td>6.23</td>
+                            <td>1.39</td>
+                            <td>2.68</td>
+                            <td>1.00</td>
+                            <td>0.06</td>
+                            <td>40.5%</td>
+                            <td>40.7%</td>
+                          </tr>
+                          <tr>
+                            <td>Greg Lee</td>
+                            <td>6.12</td>
+                            <td>0.62</td>
+                            <td>5.50</td>
+                            <td>0.25</td>
+                            <td>0.12</td>
+                            <td>40.2%</td>
+                            <td>24.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Eric Hunter Jr.</td>
+                            <td>6.24</td>
+                            <td>1.97</td>
+                            <td>2.14</td>
+                            <td>0.65</td>
+                            <td>0.03</td>
+                            <td>46.2%</td>
+                            <td>43.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Caleb McConnell</td>
+                            <td>7.06</td>
+                            <td>2.09</td>
+                            <td>5.34</td>
+                            <td>2.19</td>
+                            <td>0.47</td>
+                            <td>39.7%</td>
+                            <td>27.1%</td>
+                          </tr>
+                          <tr>
+                            <td>Chucky Hepburn</td>
+                            <td>7.94</td>
+                            <td>2.33</td>
+                            <td>2.12</td>
+                            <td>1.09</td>
+                            <td>0.15</td>
+                            <td>38.8%</td>
+                            <td>34.8%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- REPLACE THIS -->
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Premium
+                <a href="https://www.bootstrapdash.com/" target="_blank"
+                  >Bootstrap admin template</a
+                >
+                from BootstrapDash.</span
+              >
+              <span
+                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
+                >Copyright © 2021. All rights reserved.</span
+              >
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/hoverable-collapse.js"></script>
+    <script src="../../js/template.js"></script>
+    <script src="../../js/settings.js"></script>
+    <script src="../../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <!-- End custom js for this page-->
+  </body>
 </html>
